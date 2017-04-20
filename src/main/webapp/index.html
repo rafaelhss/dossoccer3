@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  	.square{
+        height: 100px;
+        border:  1px solid #c9ecd0;
+    }
+  </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+    
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+    
+    var squares = [];
+    
+    
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+        squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+        squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+        squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+        squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+        squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+    squares.push({"fieldsquare":"SQUARE_1_2",
+                   "players":[{"name":"Joao2", "dominator":false, "ball":false},
+                             {"name":"Maria2", "dominator":true, "ball":false},
+                             {"name":"Jos2", "dominator":false, "ball":true}]})
+
+    
+    
+    $scope.squares = squares;
+    
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    
+    
+    
+    
+    var getSquares = function(){
+        
+        $http.get("http://localhost:8080/fieldSquares")
+            .then(function(response){
+            var squares = {};
+            
+            var sqs = [];
+            sqs = response.data;
+                
+            for(i = 0; i < sqs.length; i=i+1){
+                squares[response.data[i]] = {};
+                squares[response.data[i]].players = [];
+            }
+            
+            $http.get("http://localhost:8080/field/kickoff")
+                .then(function(response) {
+                    console.log(response.data);
+
+                var playersarray = response.data.homePlayers.concat(response.data.awayPlayers);
+                for (i=0; i < playersarray.length ; i = i+1) {
+                    var player = playersarray[i];
+                    var pl = {};
+                    pl.name = player.name;
+                    pl.dominator = player.position.dominator;
+
+                    if(response.data.ball.controller != null) {
+                        pl.ball = (response.data.ball.controller.name == pl.name)
+                    }
+
+                    squares[player.position.fieldSquare].players.push(pl);
+
+                }
+
+                console.log("squares");
+                console.log(squares);
+                $scope.squares = squares;
+            });
+            
+        })
+    }
+        
+        
+        
+        
+    getSquares();
+    
+});
+</script>
+    
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        {{squares}}
+    <p></p>
+        
+        First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+
+
+    <p>Resize the browser window to see the effect.</p>
+   <div class="row">
+    <div ng-repeat="square in squares" class="square col-md-2 col-sm-2 col-xs-2" style="background-color:#d9ecd0;">
+        <div ng-repeat="player in square.players">
+        <img src="img/player.png" width="30px">
+            {{player.name}}
+            <img src="img/king.png" width="20px" ng-show="player.dominator">
+            <img src="img/ball.png" width="50px" ng-show="player.ball">
+        </div>            
+    </div>
+</div>
+
+    </div>
+    
+    </div>
+</body>
+</html>
